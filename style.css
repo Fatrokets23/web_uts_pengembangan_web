@@ -1,26 +1,183 @@
 
-/* RESPONSIVE UNTUK HP */
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONT HALAMAN */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #ffc0cb;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* MENU NAVIGASI */
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ff1493;
+}
+
+/* POSISI AKUN */
+.menu li:last-child {
+    position: absolute;
+    right: 30px;
+}
+
+/* TOMBOL AKUN */
+.akun {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid #ff69b4;
+}
+
+.akun:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* VIDEO BACKGROUND */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* KONTEN HERO */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 50px;
+    z-index: 1;
+    position: relative;
+}
+
+/* TEKS KIRI */
+.hero-text {
+    color: white;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* KARTU MEMBER */
+.hero-card {
+    background-color: white;
+    width: 260px;
+    flex-shrink: 0;
+    border: 5px solid #ff69b4;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+/* FOTO MEMBER */
+.card-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 3px solid #ff69b4;
+}
+
+/* INFORMASI KARTU */
+.card-text {
+    padding: 15px;
+}
+
+.card-text h3 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.card-text p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* ================================= */
+/* RESPONSIVE TABLET DAN HP */
+/* ================================= */
+
 @media screen and (max-width: 768px) {
 
-    /* Navbar */
+    /* NAVBAR */
     .navbar {
         padding: 15px 10px;
     }
 
     .menu {
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        flex-wrap: wrap;
+        gap: 15px 20px;
     }
 
     .menu li:last-child {
         position: static;
     }
 
-    /* Hero */
+    .menu li a {
+        font-size: 14px;
+    }
+
+    /* HERO */
     .hero {
         min-height: 100vh;
-        height: auto;
     }
 
     .hero-content {
@@ -28,11 +185,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 30px;
-        padding: 40px 20px;
+        gap: 35px;
+        padding: 50px 20px;
     }
 
-    /* Teks */
+    /* TEKS */
     .hero-text {
         text-align: center;
     }
@@ -45,7 +202,7 @@
         font-size: 18px;
     }
 
-    /* Kartu Member */
+    /* KARTU MEMBER */
     .hero-card {
         width: 220px;
     }
@@ -55,11 +212,11 @@
     }
 }
 
-/* HP Layar Kecil */
+/* HP LAYAR KECIL */
 @media screen and (max-width: 400px) {
 
     .menu {
-        gap: 10px;
+        gap: 12px;
     }
 
     .menu li a {
