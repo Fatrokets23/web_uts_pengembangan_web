@@ -181,61 +181,31 @@ body {
     }
 
     .hero-content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 35px;
-        padding: 50px 20px;
-    }
-
-    /* TEKS */
-    .hero-text {
-        text-align: center;
-    }
-
-    .hero-text h1 {
-        font-size: 32px;
-    }
-
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    /* KARTU MEMBER */
-    .hero-card {
-        width: 220px;
-    }
-
-    .card-img {
-        height: 270px;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 15px;
 }
 
-/* HP LAYAR KECIL */
-@media screen and (max-width: 400px) {
+.hero-text {
+    text-align: left;
+    flex: 1;
+}
 
-    .menu {
-        gap: 12px;
-    }
+.hero-text h1 {
+    font-size: 26px;
+}
 
-    .menu li a {
-        font-size: 12px;
-    }
+.hero-text p {
+    font-size: 16px;
+}
 
-    .hero-text h1 {
-        font-size: 26px;
-    }
+.hero-card {
+    width: 160px;
+    flex-shrink: 0;
+}
 
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .hero-card {
-        width: 190px;
-    }
-
-    .card-img {
-        height: 240px;
-    }
+.card-img {
+    height: 210px;
 }
