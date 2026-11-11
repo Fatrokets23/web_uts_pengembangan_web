@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fans Site Web</title>
+    <title>Fans Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,14 +11,13 @@
     <!-- Navigasi Bar -->
     <nav class="navbar">
         <ul class="menu">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Jadwal</a></li>
-            <li><a href="#">Member</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#member">Member</a></li>
+            <li><a href="#kontak">Kontak</a></li>
             <li>
                 <a href="#" class="akun">
-                    Masuk Akun: <strong>Rokets</strong>
+                    Acounnt : <strong>Rokets</strong>
                 </a>
             </li>
         </ul>
@@ -45,11 +43,76 @@
 
                 <div class="card-text">
                     <h3>Freya Jayawardana</h3>
-                    <p>Informasi singkat member.</p>
+                    <p>Terlahir dengan darah biru keraton Yogyakarta sebagai Raden Rara Freyanashifa Jayawardana, gadis asal Tangerang kelahiran 13 Februari 2006 ini telah merajut mimpinya di dunia hiburan sejak usia dua belas tahun saat bergabung menjadi anggota Generasi ke-7 JKT48. Melalui pesona "senyum karamel" dan kepribadian imajinatifnya yang tulus saat berinteraksi dengan penggemar, ia perlahan mencuri hati banyak orang hingga meledak menjadi fenomena viral pada tahun 2023 bersama barisan penggemar setianya, Freyanation. Tidak hanya berhenti sebagai idola panggung yang manis, Freya terus membuktikan evolusi bakat dan kepemimpinannya; mulai dari sukses melebarkan sayap ke layar lebar lewat film Kuasa Gelap (2024), hingga akhirnya mencapai puncak dedikasinya ketika ia dipercaya memimpin rekan-rekannya sebagai Kapten JKT48 sejak awal tahun 2026.</p>
                 </div>
             </div>
 
         </div>
+    </section>
+
+<!-- Berita Section -->
+    <section id="berita" class="berita-container">
+        
+        <!-- Header Berita -->
+        <div class="berita-header">
+            <h1>Berita & Update</h1>
+            <p>informasi terkini seputar idolamu</p>
+        </div>
+
+        <!-- Berita Utama -->
+        <article class="berita-utama">
+            <img src="images/berita1.jpg" alt="Konser Anniversary">
+            <div class="berita-utama-content">
+                <span class="kategori">Event</span>
+                <span class="tanggal">11 November 2026</span>
+                <h2>Pengumuman Detail Konser Anniversary ke-15</h2>
+                <p>Bersiaplah untuk merayakan perjalanan panjang kita! Detail mengenai lokasi, harga tiket, dan susunan acara untuk Konser Anniversary yang akan diadakan bulan depan akhirnya resmi dirilis. Pastikan kamu sudah menyiapkan lightstick-mu!</p>
+                <a href="b" class="btn-baca">Baca Selengkapnya</a>
+            </div>
+        </article>
+
+        <!-- Berita Lainnya (Grid) -->
+        <div class="berita-grid">
+            
+            <div class="berita-card">
+                <img src="" alt="Jadwal Theater">
+                <div class="berita-card-body">
+                    <span class="kategori">Theater</span>
+                    <span class="tanggal">9 November 2026</span>
+                    <h3>Setlist Baru Akan Segera Dimulai</h3>
+                    <p>Setelah sekian lama, setlist original terbaru akan segera dibawakan mulai minggu ini. Cek jadwal lengkapnya di sini.</p>
+                    <a href="#" class="btn-baca">Baca</a>
+                </div>
+            </div>
+
+            <div class="berita-card">
+                <img src="" alt="Rilis Music Video">
+                <div class="berita-card-body">
+                    <span class="kategori">Rilis</span>
+                    <span class="tanggal">7 November 2026</span>
+                    <h3>Music Video Single ke-25 Tembus 1 Juta Views</h3>
+                    <p>Terima kasih atas dukungannya! Hanya dalam waktu kurang dari 24 jam, MV terbaru kita telah mencapai rekor baru.</p>
+                    <a href="#" class="btn-baca">Baca</a>
+                </div>
+            </div>
+
+            <div class="berita-card">
+                <img src="" alt="Handshake Festival">
+                <div class="berita-card-body">
+                    <span class="kategori">Event</span>
+                    <span class="tanggal">5 November 2026</span>
+                    <h3>Panduan Mengikuti Handshake Festival</h3>
+                    <p>Bagi kamu yang baru pertama kali ikut handshake, berikut adalah tata cara dan aturan yang wajib kamu ketahui.</p>
+                    <a href="#" class="btn-baca">Baca</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Member Section -->
+    <section id="member" class="member-container">
+        <h1>Daftar Member</h1>
+        <p>Halaman member akan muncul di sini.</p>
     </section>
 
 </body>
