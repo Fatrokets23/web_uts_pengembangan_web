@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fans Site</title>
+    <title>Fans Site - Rokets</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigasi Bar -->
+    <!-- NAVBAR ATAS -->
     <nav class="navbar">
         <ul class="menu">
             <li><a href="#beranda">Beranda</a></li>
@@ -17,14 +17,14 @@
             <li><a href="#kontak">Kontak</a></li>
             <li>
                 <a href="#" class="akun">
-                    Acounnt : <strong>Rokets</strong>
+                    Akun : <strong>Rokets</strong>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- BAGIAN BERANDA -->
+    <section id="beranda" class="hero">
 
         <video autoplay loop muted playsinline class="hero-video">
             <source src="vidio/hero.mp4" type="video/mp4">
@@ -37,29 +37,25 @@
                 <p>Fansite Resmi Rokets</p>
             </div>
 
-            <!-- Member Card -->
             <div class="hero-card">
                 <img src="images/freya.jpeg" alt="Freya Jayawardana" class="card-img">
-
                 <div class="card-text">
                     <h3>Freya Jayawardana</h3>
-                    <p>Terlahir dengan darah biru keraton Yogyakarta sebagai Raden Rara Freyanashifa Jayawardana, gadis asal Tangerang kelahiran 13 Februari 2006 ini telah merajut mimpinya di dunia hiburan sejak usia dua belas tahun saat bergabung menjadi anggota Generasi ke-7 JKT48. Melalui pesona "senyum karamel" dan kepribadian imajinatifnya yang tulus saat berinteraksi dengan penggemar, ia perlahan mencuri hati banyak orang hingga meledak menjadi fenomena viral pada tahun 2023 bersama barisan penggemar setianya, Freyanation. Tidak hanya berhenti sebagai idola panggung yang manis, Freya terus membuktikan evolusi bakat dan kepemimpinannya; mulai dari sukses melebarkan sayap ke layar lebar lewat film Kuasa Gelap (2024), hingga akhirnya mencapai puncak dedikasinya ketika ia dipercaya memimpin rekan-rekannya sebagai Kapten JKT48 sejak awal tahun 2026.</p>
+                    <p>Member Generasi 7 JKT48 yang dikenal dengan pesona "senyum karamel". Sukses melebarkan sayap lewat film Kuasa Gelap (2024) dan kini menjabat sebagai Kapten JKT48 sejak awal 2026.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-<!-- Berita Section -->
+    <!-- BAGIAN BERITA -->
     <section id="berita" class="berita-container">
         
-        <!-- Header Berita -->
         <div class="berita-header">
             <h1>Berita & Update</h1>
-            <p>informasi terkini seputar idolamu</p>
+            <p>Informasi terkini seputar idolamu</p>
         </div>
 
-        <!-- Berita Utama -->
         <article class="berita-utama">
             <img src="images/berita1.jpg" alt="Konser Anniversary">
             <div class="berita-utama-content">
@@ -67,15 +63,14 @@
                 <span class="tanggal">11 November 2026</span>
                 <h2>Pengumuman Detail Konser Anniversary ke-15</h2>
                 <p>Bersiaplah untuk merayakan perjalanan panjang kita! Detail mengenai lokasi, harga tiket, dan susunan acara untuk Konser Anniversary yang akan diadakan bulan depan akhirnya resmi dirilis. Pastikan kamu sudah menyiapkan lightstick-mu!</p>
-                <a href="b" class="btn-baca">Baca Selengkapnya</a>
+                <a href="#" class="btn-baca">Baca Selengkapnya</a>
             </div>
         </article>
 
-        <!-- Berita Lainnya (Grid) -->
         <div class="berita-grid">
             
             <div class="berita-card">
-                <img src="" alt="Jadwal Theater">
+                <img src="images/berita2.jpg" alt="Jadwal Theater">
                 <div class="berita-card-body">
                     <span class="kategori">Theater</span>
                     <span class="tanggal">9 November 2026</span>
@@ -86,7 +81,7 @@
             </div>
 
             <div class="berita-card">
-                <img src="" alt="Rilis Music Video">
+                <img src="images/berita3.jpg" alt="Rilis Music Video">
                 <div class="berita-card-body">
                     <span class="kategori">Rilis</span>
                     <span class="tanggal">7 November 2026</span>
@@ -97,7 +92,7 @@
             </div>
 
             <div class="berita-card">
-                <img src="" alt="Handshake Festival">
+                <img src="images/berita4.jpg" alt="Handshake Festival">
                 <div class="berita-card-body">
                     <span class="kategori">Event</span>
                     <span class="tanggal">5 November 2026</span>
@@ -109,11 +104,71 @@
         </div>
     </section>
 
-<!-- Member Section -->
+    <!-- BAGIAN MEMBER -->
     <section id="member" class="member-container">
-        <h1>Daftar Member</h1>
-        <p>Halaman member akan muncul di sini.</p>
+        
+        <div class="member-header">
+            <h1>Daftar Member</h1>
+            <p>Kenali lebih dekat anggota lainnya</p>
+        </div>
+
+        <div class="member-grid">
+            <div class="member-item">
+                <img src="images/member1.jpg" alt="Nama Member" class="member-img">
+                <div class="member-info">
+                    <h3>Nama Member 1</h3>
+                    <p>Generasi 7</p>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="images/member2.jpg" alt="Nama Member" class="member-img">
+                <div class="member-info">
+                    <h3>Nama Member 2</h3>
+                    <p>Generasi 8</p>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="images/member3.jpg" alt="Nama Member" class="member-img">
+                <div class="member-info">
+                    <h3>Nama Member 3</h3>
+                    <p>Generasi 9</p>
+                </div>
+            </div>
+            
+            <div class="member-item">
+                <img src="images/member4.jpg" alt="Nama Member" class="member-img">
+                <div class="member-info">
+                    <h3>Nama Member 4</h3>
+                    <p>Generasi 10</p>
+                </div>
+            </div>
+        </div>
+        
     </section>
+
+    <!-- BAGIAN KONTAK -->
+    <section id="kontak" class="kontak-container">
+        <div class="kontak-header">
+            <h1>Hubungi Kami</h1>
+            <p>Punya saran, masukan, atau ingin bergabung dengan komunitas?</p>
+        </div>
+
+        <div class="kontak-form-wrapper">
+            <form action="#" method="POST" class="kontak-form">
+                <input type="text" name="nama" placeholder="Nama Kamu" required>
+                <input type="email" name="email" placeholder="Email Kamu" required>
+                <textarea name="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+                <button type="submit" class="btn-kirim">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- BAGIAN FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Fansite Resmi Rokets. Dibuat dengan 🧡 untuk Fans JKT48.</p>
+    </footer>
 
 </body>
 </html>
