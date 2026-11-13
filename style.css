@@ -1,4 +1,3 @@
-
 /* RESET DASAR */
 * {
     margin: 0;
@@ -6,20 +5,29 @@
     box-sizing: border-box;
 }
 
+/* SCROLL HALUS */
+html {
+    scroll-behavior: smooth;
+}
+
 /* FONT HALAMAN */
 body {
     font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
-/* NAVBAR */
+/* BAGIAN NAVBAR */
 .navbar {
     background-color: #ffc0cb;
     padding: 15px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px lightgray;
 }
 
 /* MENU NAVIGASI */
@@ -61,7 +69,7 @@ body {
     color: white;
 }
 
-/* HERO SECTION */
+/* BAGIAN HERO */
 .hero {
     position: relative;
     width: 100%;
@@ -72,7 +80,7 @@ body {
     overflow: hidden;
 }
 
-/* VIDEO BACKGROUND */
+/* BACKGROUND VIDEO */
 .hero-video {
     position: absolute;
     top: 0;
@@ -93,35 +101,36 @@ body {
     padding: 40px 50px;
     z-index: 1;
     position: relative;
+    margin-top: 60px; 
 }
 
 /* TEKS KIRI */
 .hero-text {
-    color: white;
+    color: palevioletred;
     text-align: left;
 }
 
 .hero-text h1 {
     font-size: 48px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 5px white;
 }
 
 .hero-text p {
     font-size: 24px;
     margin-top: 10px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 5px white;
 }
 
 /* KARTU MEMBER */
 .hero-card {
     background-color: white;
-    width: 260px;
-    flex-shrink: 0;
-    border: 5px solid #ff69b4;
+    width: 280px;
+    border: 4px solid #ff69b4;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 15px gray;
     overflow: hidden;
+    height: fit-content;
 }
 
 /* FOTO MEMBER */
@@ -131,81 +140,283 @@ body {
     object-fit: cover;
     object-position: top;
     border-bottom: 3px solid #ff69b4;
+    display: block;
 }
 
-/* INFORMASI KARTU */
+/* INFO KARTU */
 .card-text {
-    padding: 15px;
+    padding: 12px;
 }
 
+/* NAMA MEMBER */
 .card-text h3 {
-    color: #333;
-    margin-bottom: 8px;
+    color: #ff1493;
+    margin-bottom: 5px;
     font-size: 20px;
 }
 
+/* TEKS INFO */
 .card-text p {
     color: #555;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4;
 }
 
-/* ================================= */
-/* RESPONSIVE TABLET DAN HP */
-/* ================================= */
-
-@media screen and (max-width: 768px) {
-
-    /* NAVBAR */
-    .navbar {
-        padding: 15px 10px;
-    }
-
-    .menu {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px 20px;
-    }
-
-    .menu li:last-child {
-        position: static;
-    }
-
-    .menu li a {
-        font-size: 14px;
-    }
-
-    /* HERO */
-    .hero {
-        min-height: 100vh;
-    }
-
-    .hero-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    padding: 30px 15px;
+/* BERITA SECTION */
+.berita-container {
+    padding: 100px 10%;
+    background-color: #fff0f5; 
 }
 
-.hero-text {
-    text-align: left;
-    flex: 1;
+.berita-header {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.hero-text h1 {
-    font-size: 26px;
+.berita-header h1 {
+    color: #ff1493;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-.hero-text p {
+.berita-header p {
+    color: #555;
+}
+
+/* BERITA UTAMA */
+.berita-utama {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px pink;
+    border: 2px solid #ffc0cb;
+    margin-bottom: 50px;
+}
+
+.berita-utama img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.berita-utama-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kategori {
+    background: #ff69b4;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.tanggal {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.berita-utama-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.berita-utama-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-baca {
+    display: inline-block;
+    background: #ff1493;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.btn-baca:hover {
+    background: #ff69b4;
+}
+
+/* GRID BERITA */
+.berita-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.berita-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px pink;
+    border: 1px solid #ffc0cb;
+    transition: transform 0.3s;
+}
+
+.berita-card:hover {
+    transform: translateY(-10px);
+}
+
+.berita-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.berita-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.berita-card-body h3 {
+    color: #ff1493;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.berita-card-body p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* BAGIAN MEMBER */
+.member-container {
+    padding: 100px 10%;
+    background-color: white;
+}
+
+.member-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.member-header h1 {
+    color: #ff1493;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.member-item {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.member-item:hover {
+    transform: translateY(-5px);
+}
+
+.member-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffc0cb;
+    box-shadow: 0 5px 15px pink;
+    margin-bottom: 15px;
+}
+
+.member-info h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+.member-info p {
+    color: #ff1493;
+    font-weight: bold;
+}
+
+/* BAGIAN KONTAK */
+.kontak-container {
+    padding: 100px 10%;
+    background-color: #fff0f5;
+}
+
+.kontak-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.kontak-header h1 {
+    color: #ff1493;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.kontak-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px pink;
+    border: 2px solid #ffc0cb;
+}
+
+.kontak-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kontak-form input, 
+.kontak-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ffc0cb;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-.hero-card {
-    width: 160px;
-    flex-shrink: 0;
+.kontak-form input:focus, 
+.kontak-form textarea:focus {
+    border-color: #ff1493;
 }
 
-.card-img {
-    height: 210px;
+.btn-kirim {
+    background: #ff1493;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-kirim:hover {
+    background: #ff69b4;
+}
+
+/* BAGIAN FOOTER */
+.footer {
+    background-color: #ffc0cb;
+    color: #333;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
 }
